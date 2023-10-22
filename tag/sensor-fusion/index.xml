@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sensor fusion | Zongzhou Wu</title>
+    <link>https://zzwu29.github.io/tag/sensor-fusion/</link>
+      <atom:link href="https://zzwu29.github.io/tag/sensor-fusion/index.xml" rel="self" type="application/rss+xml" />
+    <description>sensor fusion</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zzwu29.github.io/media/icon_hu2a5c139d10a6f22d93bb117fcb1906b5_18896_512x512_fill_lanczos_center_3.png</url>
+      <title>sensor fusion</title>
+      <link>https://zzwu29.github.io/tag/sensor-fusion/</link>
+    </image>
+    
+    <item>
+      <title>A work on indoor-outdoor positioning</title>
+      <link>https://zzwu29.github.io/post/jsen-1/</link>
+      <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://zzwu29.github.io/post/jsen-1/</guid>
+      <description>&lt;h2 id=&#34;title&#34;&gt;Title&lt;/h2&gt;
+&lt;p&gt;An indoor and outdoor seamless positioning system for low-cost UGV using PPP/INS/UWB tightly coupled integration&lt;/p&gt;
+&lt;p&gt;Published in: IEEE Sensors Journal&lt;/p&gt;
+&lt;h2 id=&#34;author&#34;&gt;Author&lt;/h2&gt;
+&lt;p&gt;Xingxing Li, Zongzhou Wu, Zhiheng Shen, Zhili Xu, Xin Li, Shengyu Li and Junjie Han&lt;/p&gt;
+&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;Seamless positioning is critical for mobile robots to achieve ubiquitous availability in all scenarios. Precise point positioning (PPP) technique provides a centimeter-level solution without a reference station and is often integrated with an inertial navigation system (INS) for outdoor navigation of unmanned ground vehicles (UGVs). However, in challenging environments such as indoors, the performance of PPP/INS systems is severely degraded, while ultra-wideband (UWB) is widely used due to its high accuracy over short distances. This paper proposes a tightly coupled PPP/INS/UWB integrated system, in which satellite-difference ionosphere-free pseudorange and carrier-phase measurements from a single receiver, micro-electro-mechanical system (MEMS) inertial measurements, and the UWB rangings are tightly fused to accomplish continuous and precise positioning throughout indoor and outdoor coverage. To mitigate the effects of non-line-of-sight (NLOS), multipath and faulty signals, a two-step weighting approach is proposed to improve UWB positioning performance, including segmentation weighting based on the signal strength, and weight adjustment based on area identification. Besides, motion constraints are imposed on velocity, yaw, and height to suppress drifts during signal-harsh periods. Real-world experiment results show that the proposed system can achieve continuous positioning in the overall indoor and outdoor environments, with the MAEs of (0.214 m, 0.186 m, 0.243 m) and the RMSEs of (0.339 m, 0.291 m, 0.414 m) in the east, north, and up directions. In transitional areas with severe signal interference and interruption, a 0.5 m positioning accuracy and smooth switching are still attainable.&lt;/p&gt;
+&lt;h2 id=&#34;keyword&#34;&gt;Keyword&lt;/h2&gt;
+&lt;p&gt;Area identification, micro-electro-mechanical system, multisensor fusion, precise point positioning, seamless positioning, tightly coupled integration, ultra-wideband&lt;/p&gt;
+&lt;h2 id=&#34;doi&#34;&gt;DOI&lt;/h2&gt;
+&lt;p&gt;10.1109/JSEN.2023.3310480&lt;/p&gt;
+&lt;h2 id=&#34;link&#34;&gt;Link&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://ieeexplore.ieee.org/document/10242329&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://ieeexplore.ieee.org/document/10242329&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

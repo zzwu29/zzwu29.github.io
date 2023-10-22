@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>feature detector | Zongzhou Wu</title>
+    <link>https://zzwu29.github.io/tag/feature-detector/</link>
+      <atom:link href="https://zzwu29.github.io/tag/feature-detector/index.xml" rel="self" type="application/rss+xml" />
+    <description>feature detector</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zzwu29.github.io/media/icon_hu2a5c139d10a6f22d93bb117fcb1906b5_18896_512x512_fill_lanczos_center_3.png</url>
+      <title>feature detector</title>
+      <link>https://zzwu29.github.io/tag/feature-detector/</link>
+    </image>
+    
+    <item>
+      <title>SuperPointCPP</title>
+      <link>https://zzwu29.github.io/post/superpointcpp/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://zzwu29.github.io/post/superpointcpp/</guid>
+      <description>&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/zzwu29/SuperPointCPP&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/zzwu29/SuperPointCPP&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

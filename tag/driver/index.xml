@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>driver | Zongzhou Wu</title>
+    <link>https://zzwu29.github.io/tag/driver/</link>
+      <atom:link href="https://zzwu29.github.io/tag/driver/index.xml" rel="self" type="application/rss+xml" />
+    <description>driver</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zzwu29.github.io/media/icon_hu2a5c139d10a6f22d93bb117fcb1906b5_18896_512x512_fill_lanczos_center_3.png</url>
+      <title>driver</title>
+      <link>https://zzwu29.github.io/tag/driver/</link>
+    </image>
+    
+    <item>
+      <title>Ubuntu Nvidia Driver</title>
+      <link>https://zzwu29.github.io/post/nvidia-driver/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://zzwu29.github.io/post/nvidia-driver/</guid>
+      <description>&lt;h2 id=&#34;how-to-install-nvidia-driver-on-ubuntu-2004-&#34;&gt;How to install nvidia driver on ubuntu 20.04 ?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/qq_42887760/article/details/126903100?spm=1001.2014.3001.5506&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://blog.csdn.net/qq_42887760/article/details/126903100?spm=1001.2014.3001.5506&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_38043069/article/details/128400761?spm=1001.2014.3001.5506&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://blog.csdn.net/qq_38043069/article/details/128400761?spm=1001.2014.3001.5506&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/wf19930209/article/details/81877822?spm=1001.2014.3001.5506&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://blog.csdn.net/wf19930209/article/details/81877822?spm=1001.2014.3001.5506&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Legion Y9000P bios: F2&lt;/p&gt;
+&lt;p&gt;Setting &lt;code&gt;discrete graphics&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;tty: Ctrl + Alt + F(3/4/5&amp;hellip;&amp;hellip;)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

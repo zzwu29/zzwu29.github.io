@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer vision | Zongzhou Wu</title>
+    <link>https://zzwu29.github.io/tag/computer-vision/</link>
+      <atom:link href="https://zzwu29.github.io/tag/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <description>computer vision</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zzwu29.github.io/media/icon_hu2a5c139d10a6f22d93bb117fcb1906b5_18896_512x512_fill_lanczos_center_3.png</url>
+      <title>computer vision</title>
+      <link>https://zzwu29.github.io/tag/computer-vision/</link>
+    </image>
+    
+    <item>
+      <title>SuperPointCPP</title>
+      <link>https://zzwu29.github.io/post/superpointcpp/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://zzwu29.github.io/post/superpointcpp/</guid>
+      <description>&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/zzwu29/SuperPointCPP&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/zzwu29/SuperPointCPP&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Frame Interpolation</title>
+      <link>https://zzwu29.github.io/post/frame-interpolation/</link>
+      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://zzwu29.github.io/post/frame-interpolation/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;When I tried to solve a state estimation via visual-inertial odometry, I found that the some photos captured by camera were lost.&lt;/p&gt;
+&lt;h2 id=&#34;open-source-project&#34;&gt;Open-source Project&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://film-net.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://film-net.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google-research/frame-interpolation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/google-research/frame-interpolation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;paper&#34;&gt;Paper&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2202.04901&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://arxiv.org/pdf/2202.04901&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;scripts&#34;&gt;Scripts&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;./img_proc.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;significant linear motion&lt;/li&gt;
+&lt;li&gt;turn a corner&lt;/li&gt;
+&lt;li&gt;frame interval too long (&amp;gt;= &lt;strong&gt;0.2s&lt;/strong&gt; in autonomous driving)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

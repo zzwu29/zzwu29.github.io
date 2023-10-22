@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>color | Zongzhou Wu</title>
+    <link>https://zzwu29.github.io/tag/color/</link>
+      <atom:link href="https://zzwu29.github.io/tag/color/index.xml" rel="self" type="application/rss+xml" />
+    <description>color</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zzwu29.github.io/media/icon_hu2a5c139d10a6f22d93bb117fcb1906b5_18896_512x512_fill_lanczos_center_3.png</url>
+      <title>color</title>
+      <link>https://zzwu29.github.io/tag/color/</link>
+    </image>
+    
+    <item>
+      <title>Palette</title>
+      <link>https://zzwu29.github.io/post/color-palettes/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://zzwu29.github.io/post/color-palettes/</guid>
+      <description>&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://antv.antgroup.com/specification/language/palette&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://antv.antgroup.com/specification/language/palette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.cookbook-r.com/Graphs/Colors_%28ggplot2%29/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://matplotlib.org/stable/users/explain/colors/colormaps.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://matplotlib.org/stable/users/explain/colors/colormaps.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ggplot2.tidyverse.org/reference/#scales&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://ggplot2.tidyverse.org/reference/#scales&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://colorbrewer2.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://colorbrewer2.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://colorspace.r-forge.r-project.org/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://colorspace.r-forge.r-project.org/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/garrettj403/SciencePlots&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/garrettj403/SciencePlots&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mtennekes/cols4all&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mtennekes/cols4all&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/coatless-rpkg/cetcolor&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/coatless-rpkg/cetcolor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://materialui.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://materialui.co/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://brandcolors.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://brandcolors.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://moviesincolor.com/films&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://moviesincolor.com/films&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://personal.sron.nl/~pault/#sec:qualitative&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://personal.sron.nl/~pault/#sec:qualitative&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://coolors.co/palettes/palettes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://coolors.co/palettes/palettes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.webdesignrankings.com/resources/lolcolors/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.webdesignrankings.com/resources/lolcolors/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.schemecolor.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.schemecolor.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;palette-example&#34;&gt;Palette example&lt;/h2&gt;
+&lt;object data=&#34;./palette.pdf&#34; type=&#34;application/pdf&#34; width=&#34;700px&#34; height=&#34;700px&#34;&gt;
+    &lt;embed src=&#34;./palette.pdf&#34;&gt;
+        &lt;p&gt;This browser does not support PDFs. Please download the PDF to view it: &lt;a href=&#34;./palette.pdf&#34;&gt;Download PDF&lt;/a&gt;.&lt;/p&gt;
+    &lt;/embed&gt;
+&lt;/object&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./colorblind_palette.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./unnamed-chunk-14-1.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
