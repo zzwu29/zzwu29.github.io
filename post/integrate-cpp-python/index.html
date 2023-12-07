@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: November 5, 2023 --><html lang="en-us" >
+<!-- Last Published: December 7, 2023 --><html lang="en-us" >
 
 
 <head>
@@ -328,7 +328,7 @@
     />
   
   
-    <meta property="article:modified_time" content="2023-11-05T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2023-12-07T00:00:00&#43;00:00">
   
 
 
@@ -359,7 +359,7 @@
   "headline": "Integrate C++ and Python in programming",
   
   "datePublished": "2023-11-05T00:00:00Z",
-  "dateModified": "2023-11-05T00:00:00Z",
+  "dateModified": "2023-12-07T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -853,8 +853,10 @@
     
     
       
+          Last updated on
+      
     
-    Nov 5, 2023
+    Dec 7, 2023
   </span>
   
 
@@ -863,7 +865,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    2 min read
   </span>
   
 
@@ -901,21 +903,100 @@
 </span></span></span><span class="line"><span class="cl"><span class="err">......
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">Third_python_ROOT</span><span class="o">}</span><span class="s">/include</span><span class="p">)</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">......
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nb">target_link_libraries</span><span class="p">(</span><span class="o">${</span><span class="nv">PROJECT_NAME</span><span class="o">}</span> <span class="o">${</span><span class="nv">Third_python_ROOT</span><span class="o">}</span><span class="s">/libs/python39.lib</span><span class="p">)</span><span class="err">
-</span></span></span></code></pre></div><h2 id="h-or-hpp-file">.h or .hpp file</h2>
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nb">target_link_libraries</span><span class="p">(</span><span class="o">${</span><span class="nv">PROJECT_NAME</span><span class="o">}</span> <span class="o">${</span><span class="nv">Third_python_ROOT</span><span class="o">}</span><span class="s">/libs/python39.lib</span><span class="p">)</span> <span class="c"># python 3.9 as an example
+</span></span></span></code></pre></div><h2 id="modify-h-and-cpp-file">Modify .h and .cpp file</h2>
 <p>You should include python header file in your header file as</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Python.h&gt;</span><span class="cp">
-</span></span></span></code></pre></div><p>and here is an example of simple usage</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">Py_Initialize</span><span class="p">();</span>
+</span></span></span></code></pre></div><p>and here is an example of init</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="c1">// init
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Py_Initialize</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">Py_IsInitialized</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// as your code in .py file
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">PyRun_SimpleString</span><span class="p">(</span><span class="s">&#34;......&#34;</span><span class="p">);</span> 
-</span></span><span class="line"><span class="cl"><span class="c1">// as your code in command line
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">PyRun_SimpleString</span><span class="p">(</span><span class="s">&#34;import os&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="n">PyRun_SimpleString</span><span class="p">(</span><span class="s">&#34;os.system(</span><span class="se">\&#34;</span><span class="s">......</span><span class="se">\&#34;</span><span class="s">)&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// an example to run python command as a string
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">PyRun_SimpleString</span><span class="p">(</span><span class="s">&#34;import sys&#34;</span><span class="p">);</span> 
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">Py_Finalize</span><span class="p">();</span>
-</span></span></code></pre></div>
+</span></span><span class="line"><span class="cl"><span class="c1">// an example to set python parameters
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">pyParams</span> <span class="o">=</span> <span class="n">PyDict_New</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//mind: Py_BuildValue &#39;s&#39; will automatically add &#34; at beginning and end, so &#34;\&#34;&#34; + ... + &#34;\&#34;&#34; will result wrong !!!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">PyDict_SetItemString</span><span class="p">(</span><span class="n">pyParams</span><span class="p">,</span> <span class="s">&#34;weights_path&#34;</span><span class="p">,</span> <span class="n">Py_BuildValue</span><span class="p">(</span><span class="s">&#34;s&#34;</span><span class="p">,</span> <span class="n">string</span><span class="p">(</span><span class="n">weights_path</span><span class="p">).</span><span class="n">c_str</span><span class="p">()));</span> <span class="c1">//string
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">PyDict_SetItemString</span><span class="p">(</span><span class="n">pyParams</span><span class="p">,</span> <span class="s">&#34;H&#34;</span><span class="p">,</span> <span class="n">Py_BuildValue</span><span class="p">(</span><span class="s">&#34;i&#34;</span><span class="p">,</span> <span class="n">H</span><span class="p">));</span> <span class="c1">//int
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">PyDict_SetItemString</span><span class="p">(</span><span class="n">pyParams</span><span class="p">,</span> <span class="s">&#34;conf_thresh&#34;</span><span class="p">,</span> <span class="n">Py_BuildValue</span><span class="p">(</span><span class="s">&#34;d&#34;</span><span class="p">,</span> <span class="n">conf_thresh</span><span class="p">));</span> <span class="c1">//double or float
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">PyDict_SetItemString</span><span class="p">(</span><span class="n">pyParams</span><span class="p">,</span> <span class="s">&#34;cuda&#34;</span><span class="p">,</span> <span class="n">Py_True</span><span class="p">);</span> <span class="c1">//bool
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// init threads
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">PyEval_InitThreads</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">PyEval_ReleaseThread</span><span class="p">(</span><span class="n">PyThreadState_Get</span><span class="p">());</span>
+</span></span></code></pre></div><p>and here is an example of run a function</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">PyGILState_STATE</span> <span class="n">state</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">state</span> <span class="o">=</span> <span class="n">PyGILState_Ensure</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">pModule</span> <span class="o">=</span> <span class="n">PyImport_ImportModule</span><span class="p">(</span><span class="s">&#34;...&#34;</span><span class="p">);</span>  <span class="c1">// ... is python file name
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">pFunc</span> <span class="o">=</span> <span class="n">PyObject_GetAttrString</span><span class="p">(</span><span class="n">pModule</span><span class="p">,</span> <span class="s">&#34;......&#34;</span><span class="p">);</span> <span class="c1">// ...... is the function name in file ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">pModule</span> <span class="o">&amp;&amp;</span> <span class="n">PyCallable_Check</span><span class="p">(</span><span class="n">pFunc</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PyObject</span><span class="o">*</span> <span class="n">pArgs</span> <span class="o">=</span> <span class="n">PyTuple_New</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PyTuple_SetItem</span><span class="p">(</span><span class="n">pArgs</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pyParams</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PyObject</span><span class="o">*</span> <span class="n">pReturn</span> <span class="o">=</span> <span class="n">PyEval_CallObject</span><span class="p">(</span><span class="n">pFunc</span><span class="p">,</span> <span class="n">pArgs</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">pReturn</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">PyArrayObject</span><span class="o">*</span> <span class="n">fea</span> <span class="o">=</span> <span class="p">(</span><span class="n">PyArrayObject</span><span class="o">*</span><span class="p">)</span><span class="n">pReturn</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// ---------- add here ---------- 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">        <span class="n">Py_DECREF</span><span class="p">(</span><span class="n">fea</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;python not valid return! error!&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>and you should close the python module once you do not need</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">Py_Finalize</span><span class="p">();</span>
+</span></span></code></pre></div><h2 id="interact-with-numpy-io-parameters">Interact with numpy I/O parameters</h2>
+<p>You should include numpy directory in CMakeLists.txt as</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmake" data-lang="cmake"><span class="line"><span class="cl"><span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">Third_python_ROOT</span><span class="o">}</span><span class="s">/Lib/site-packages/numpy/core/include</span><span class="p">)</span><span class="err">
+</span></span></span></code></pre></div><p>You should include numpy header file in your header file as</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;numpy/arrayobject.h&gt;</span><span class="cp">
+</span></span></span></code></pre></div><p>An example to receive the numpy return</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">pModule</span> <span class="o">&amp;&amp;</span> <span class="n">PyCallable_Check</span><span class="p">(</span><span class="n">pFunc</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PyObject</span><span class="o">*</span> <span class="n">pArgs</span> <span class="o">=</span> <span class="n">PyTuple_New</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PyTuple_SetItem</span><span class="p">(</span><span class="n">pArgs</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pyParams</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PyObject</span><span class="o">*</span> <span class="n">pReturn</span> <span class="o">=</span> <span class="n">PyEval_CallObject</span><span class="p">(</span><span class="n">pFunc</span><span class="p">,</span> <span class="n">pArgs</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">pReturn</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">PyArrayObject</span><span class="o">*</span> <span class="n">fea</span> <span class="o">=</span> <span class="p">(</span><span class="n">PyArrayObject</span><span class="o">*</span><span class="p">)</span><span class="n">pReturn</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// -------------------- 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">fea_row</span> <span class="o">=</span> <span class="n">fea</span><span class="o">-&gt;</span><span class="n">dimensions</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">fea_col</span> <span class="o">=</span> <span class="n">fea</span><span class="o">-&gt;</span><span class="n">dimensions</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">idx_col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">idx_col</span> <span class="o">&lt;</span> <span class="n">fea_col</span><span class="p">;</span> <span class="n">idx_col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">double</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">idx_row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">idx_row</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">;</span> <span class="n">idx_row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">idx_row</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">x</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="kt">double</span><span class="o">*</span><span class="p">)(</span><span class="n">fea</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">+</span> <span class="n">idx_row</span> <span class="o">*</span> <span class="n">fea</span><span class="o">-&gt;</span><span class="n">strides</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">idx_col</span> <span class="o">*</span> <span class="n">fea</span><span class="o">-&gt;</span><span class="n">strides</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">idx_row</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">y</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="kt">double</span><span class="o">*</span><span class="p">)(</span><span class="n">fea</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">+</span> <span class="n">idx_row</span> <span class="o">*</span> <span class="n">fea</span><span class="o">-&gt;</span><span class="n">strides</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">idx_col</span> <span class="o">*</span> <span class="n">fea</span><span class="o">-&gt;</span><span class="n">strides</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">z</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="kt">double</span><span class="o">*</span><span class="p">)(</span><span class="n">fea</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">fea</span><span class="o">-&gt;</span><span class="n">strides</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">idx_col</span> <span class="o">*</span> <span class="n">fea</span><span class="o">-&gt;</span><span class="n">strides</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">n_pts</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">cv</span><span class="o">::</span><span class="n">Point2f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">add_feature_num</span> <span class="o">=</span> <span class="n">add_feature_num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// -------------------- 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">        <span class="n">Py_DECREF</span><span class="p">(</span><span class="n">fea</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;python not valid return! error!&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="reference-link">Reference Link</h2>
+<p><a href="https://blog.csdn.net/qq_25005909/article/details/79092315" target="_blank" rel="noopener">https://blog.csdn.net/qq_25005909/article/details/79092315</a></p>
+
     </div>
 
     

@@ -17,7 +17,14 @@
       <link>https://zzwu29.github.io/post/color-palettes/</link>
       <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://zzwu29.github.io/post/color-palettes/</guid>
-      <description>&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;a-custumized-matplotlib-style-mplstyle&#34;&gt;A custumized matplotlib style (.mplstyle)&lt;/h2&gt;
+&lt;p&gt;You can try &lt;a href=&#34;./zongzhouwu.mplstyle&#34;&gt;this&lt;/a&gt; matplotlib style.&lt;/p&gt;
+&lt;h3 id=&#34;usage&#34;&gt;Usage&lt;/h3&gt;
+&lt;p&gt;Install scienceplots package &lt;a href=&#34;https://github.com/garrettj403/SciencePlots&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;, and copy the mplstyle file to its directory.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;scienceplots&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;plt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;use&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;zongzhouwu&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://cdn.elifesciences.org/author-guide/tables-colour.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://cdn.elifesciences.org/author-guide/tables-colour.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://antv.antgroup.com/specification/language/palette&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://antv.antgroup.com/specification/language/palette&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.cookbook-r.com/Graphs/Colors_%28ggplot2%29/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/&lt;/a&gt;&lt;/p&gt;
