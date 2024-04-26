@@ -33,6 +33,33 @@
     </item>
     
     <item>
+      <title>A novel factor graph framework for tightly coupled GNSS/INS integration with carrier-phase ambiguity resolution</title>
+      <link>https://zzwu29.github.io/publication/journal-article/tits-1/</link>
+      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://zzwu29.github.io/publication/journal-article/tits-1/</guid>
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
       <title>traj_eval</title>
       <link>https://zzwu29.github.io/project/traj_eval/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>

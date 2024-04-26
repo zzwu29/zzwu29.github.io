@@ -1,14 +1,4 @@
 # Matplotlib style for scientific plotting
-# see: https://cdn.elifesciences.org/author-guide/tables-colour.pdf
-
-## Blue: #90CAF9
-## Green: #C5E1A5
-## Orange: #FFB74D
-## Yellow: #FFF176
-## Purple: #9E86C9
-## Red: #E57373
-## Pink: #F48FB1
-## Grey: #E6E6E6
 
 ## Blue text: #366BFB
 ## Purple text: #9C27B0 
@@ -16,7 +6,11 @@
 
 # Set color cycle: 
 # Blue, Red, Green, Orange, Pink, Purple, Yellow, Grey
-axes.prop_cycle : cycler('color', ['90CAF9', 'E57373', 'C5E1A5', 'FFB74D', 'F48FB1', '9E86C9', 'FFF176', 'E6E6E6'])
+# https://cdn.elifesciences.org/author-guide/tables-colour.pdf
+# axes.prop_cycle : cycler('color', ['90CAF9', 'E57373', 'C5E1A5', 'FFB74D', 'F48FB1', '9E86C9', 'FFF176', 'E6E6E6'])
+
+# colorblind friendly
+axes.prop_cycle : cycler('color', ['4E79A7', 'F28E2B', 'E15759', '76B2B2', '59A14F', 'EDC948', 'B07AA1', 'FF9DA7', '9C755F', 'BAB0AC'])
 
 # Set default figure size
 figure.figsize : 3.4, 2.5
@@ -58,7 +52,7 @@ legend.numpoints : 1
 # Set line widths
 lines.linewidth : 1.0
 lines.markersize : 3.0
-lines.markerfacecolor : none
+# lines.markerfacecolor : none
 
 # Always save as 'tight'
 savefig.bbox : tight
