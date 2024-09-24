@@ -276,12 +276,12 @@
 
   
 
-<meta name="description" content="Seamless positioning is critical for mobile robots to achieve ubiquitous availability in all scenarios. The precise point positioning (PPP) technique provides a centimeter-level solution without a reference station and is often integrated with an inertial navigation system (INS) for outdoor navigation of unmanned ground vehicles (UGVs). However, in challenging environments such as indoors, the performance of PPP/INS systems is severely degraded, while ultrawideband (UWB) is widely used due to its high accuracy over short distances. This article proposes a tightly coupled (TC) PPP/INS/UWB integrated system, in which satellite-difference ionosphere-free (SD-IF) pseudorange and carrier-phase measurements from a single receiver, microelectromechanical system (MEMS) inertial measurements, and the UWB rangings are tightly fused to accomplish continuous and precise positioning throughout indoor and outdoor coverage. To mitigate the effects of nonline-of-sight (NLOS), multipath, and faulty signals, a two-step weighting approach is proposed to improve UWB positioning performance, including segmentation weighting based on the signal strength, and weight adjustment based on area identification. Besides, motion constraints are imposed on velocity, yaw, and height to suppress drifts during signal-harsh periods. Real-world experiment results show that the proposed system can achieve continuous positioning in the overall indoor and outdoor environments, with the mean absolute errors (MAEs) of (0.214, 0.186, and 0.243 m) and the root mean square errors (RMSEs) of (0.339, 0.291, and 0.414 m) in the east, north, and up directions. In transitional areas with severe signal interference and interruption, a 0.5 m positioning accuracy and smooth switching are still attainable." />
+<meta name="description" content="Continuous and reliable estimation of navigation states is of paramount importance in ensuring the safe operation of intelligent vehicles. The conventional global navigation satellite system (GNSS)-Inertial-Visual navigation systems have demonstrated the capability to achieve locally accurate and globally drift-free pose estimation. However, challenges such as frequent satellite signal interference, limited visual features, and sudden sensor failures can severely degrade performance or even lead to complete system collapse when utilizing minimal sensor configurations. For this reason, we propose a novel and globally drift-free tightly coupled (TC) system that can integrate any number of GNSS, inertial measurement units (IMUs), and cameras to enable accurate and robust vehicle navigation. Specifically, a stacked state estimator centered on the IMU is designed to fuse information from all sensors at the raw measurement level. The pseudorange and carrier phase measurements from all GNSS terminals are directly correlated with the core IMU, ensuring accurate and fast positioning of the system in a global frame. The feature measurements from multiple independent cameras are also used to update the states by exploiting inter-epoch geometric constraints. In addition, the multiple homogeneous IMUs can not only further improve the state estimation of the system by imposing rigid constraints on the core IMU, but also switch over in time for smooth state estimation when the core IMU are faulty. We comprehensively evaluate the state estimation accuracy and robustness of the proposed approach through a series of in-vehicle experiments and simulation experiments in real urban scenarios. The results indicate that the proposed system can achieve 93.2% availability with a horizontal position error less than 0.5 m and 97.8% availability with a heading error less than 0.2 deg in typical urban environments, significantly outperforming both conventional and state-of-the-art approaches. Note to Practitioners —This study focuses on the tight integration of multiple homogeneous and heterogeneous sensors with the goal of addressing frequent interference and degradation challenges in wide-area vehicle navigation applications. We propose a general-purpose GNSS-Inertial-Visual tight coupled framework capable of integrating any number of GNSS, IMUs, and cameras at the raw measurement level. It maximizes the use of as much sensor information as possible to achieve accurate and robust state estimation and is resilient to anomalous measurements and sensor unavailability. This solution holds practical and effective for autonomous vehicles that are now commonly equipped with multiple sensors." />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://zzwu29.github.io/publication/journal-article/jsen-1/" />
-<link rel="canonical" href="https://zzwu29.github.io/publication/journal-article/jsen-1/" />
+<link rel="alternate" hreflang="en-us" href="https://zzwu29.github.io/publication/journal-article/tase-1/" />
+<link rel="canonical" href="https://zzwu29.github.io/publication/journal-article/tase-1/" />
 
 
 
@@ -317,18 +317,18 @@
   <meta property="twitter:creator" content="@wowchemy" />
 <meta property="twitter:image" content="https://zzwu29.github.io/media/icon_hu2a5c139d10a6f22d93bb117fcb1906b5_18896_512x512_fill_lanczos_center_3.png" />
 <meta property="og:site_name" content="Zongzhou Wu" />
-<meta property="og:url" content="https://zzwu29.github.io/publication/journal-article/jsen-1/" />
-<meta property="og:title" content="An indoor and outdoor seamless positioning system for low-cost UGV using PPP/INS/UWB tightly coupled integration | Zongzhou Wu" />
-<meta property="og:description" content="Seamless positioning is critical for mobile robots to achieve ubiquitous availability in all scenarios. The precise point positioning (PPP) technique provides a centimeter-level solution without a reference station and is often integrated with an inertial navigation system (INS) for outdoor navigation of unmanned ground vehicles (UGVs). However, in challenging environments such as indoors, the performance of PPP/INS systems is severely degraded, while ultrawideband (UWB) is widely used due to its high accuracy over short distances. This article proposes a tightly coupled (TC) PPP/INS/UWB integrated system, in which satellite-difference ionosphere-free (SD-IF) pseudorange and carrier-phase measurements from a single receiver, microelectromechanical system (MEMS) inertial measurements, and the UWB rangings are tightly fused to accomplish continuous and precise positioning throughout indoor and outdoor coverage. To mitigate the effects of nonline-of-sight (NLOS), multipath, and faulty signals, a two-step weighting approach is proposed to improve UWB positioning performance, including segmentation weighting based on the signal strength, and weight adjustment based on area identification. Besides, motion constraints are imposed on velocity, yaw, and height to suppress drifts during signal-harsh periods. Real-world experiment results show that the proposed system can achieve continuous positioning in the overall indoor and outdoor environments, with the mean absolute errors (MAEs) of (0.214, 0.186, and 0.243 m) and the root mean square errors (RMSEs) of (0.339, 0.291, and 0.414 m) in the east, north, and up directions. In transitional areas with severe signal interference and interruption, a 0.5 m positioning accuracy and smooth switching are still attainable." /><meta property="og:image" content="https://zzwu29.github.io/media/icon_hu2a5c139d10a6f22d93bb117fcb1906b5_18896_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://zzwu29.github.io/publication/journal-article/tase-1/" />
+<meta property="og:title" content="Accurate and capable GNSS-inertial-visual vehicle navigation via tightly coupled multiple homogeneous sensors | Zongzhou Wu" />
+<meta property="og:description" content="Continuous and reliable estimation of navigation states is of paramount importance in ensuring the safe operation of intelligent vehicles. The conventional global navigation satellite system (GNSS)-Inertial-Visual navigation systems have demonstrated the capability to achieve locally accurate and globally drift-free pose estimation. However, challenges such as frequent satellite signal interference, limited visual features, and sudden sensor failures can severely degrade performance or even lead to complete system collapse when utilizing minimal sensor configurations. For this reason, we propose a novel and globally drift-free tightly coupled (TC) system that can integrate any number of GNSS, inertial measurement units (IMUs), and cameras to enable accurate and robust vehicle navigation. Specifically, a stacked state estimator centered on the IMU is designed to fuse information from all sensors at the raw measurement level. The pseudorange and carrier phase measurements from all GNSS terminals are directly correlated with the core IMU, ensuring accurate and fast positioning of the system in a global frame. The feature measurements from multiple independent cameras are also used to update the states by exploiting inter-epoch geometric constraints. In addition, the multiple homogeneous IMUs can not only further improve the state estimation of the system by imposing rigid constraints on the core IMU, but also switch over in time for smooth state estimation when the core IMU are faulty. We comprehensively evaluate the state estimation accuracy and robustness of the proposed approach through a series of in-vehicle experiments and simulation experiments in real urban scenarios. The results indicate that the proposed system can achieve 93.2% availability with a horizontal position error less than 0.5 m and 97.8% availability with a heading error less than 0.2 deg in typical urban environments, significantly outperforming both conventional and state-of-the-art approaches. Note to Practitioners —This study focuses on the tight integration of multiple homogeneous and heterogeneous sensors with the goal of addressing frequent interference and degradation challenges in wide-area vehicle navigation applications. We propose a general-purpose GNSS-Inertial-Visual tight coupled framework capable of integrating any number of GNSS, IMUs, and cameras at the raw measurement level. It maximizes the use of as much sensor information as possible to achieve accurate and robust state estimation and is resilient to anomalous measurements and sensor unavailability. This solution holds practical and effective for autonomous vehicles that are now commonly equipped with multiple sensors." /><meta property="og:image" content="https://zzwu29.github.io/media/icon_hu2a5c139d10a6f22d93bb117fcb1906b5_18896_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
       property="article:published_time"
-      content="2023-10-16T00:00:00&#43;00:00"
+      content="2024-07-05T00:00:00&#43;00:00"
     />
   
   
-    <meta property="article:modified_time" content="2023-09-06T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2024-07-05T00:00:00&#43;00:00">
   
 
 
@@ -352,16 +352,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://zzwu29.github.io/publication/journal-article/jsen-1/"
+    "@id": "https://zzwu29.github.io/publication/journal-article/tase-1/"
   },
-  "headline": "An indoor and outdoor seamless positioning system for low-cost UGV using PPP/INS/UWB tightly coupled integration",
+  "headline": "Accurate and capable GNSS-inertial-visual vehicle navigation via tightly coupled multiple homogeneous sensors",
   
-  "datePublished": "2023-10-16T00:00:00Z",
-  "dateModified": "2023-09-06T00:00:00Z",
+  "datePublished": "2024-07-05T00:00:00Z",
+  "dateModified": "2024-07-05T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Xingxing Li"
+    "name": "Zhiheng Shen"
   },
   
   "publisher": {
@@ -372,7 +372,7 @@
       "url": "https://zzwu29.github.io/media/icon_hu2a5c139d10a6f22d93bb117fcb1906b5_18896_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Seamless positioning is critical for mobile robots to achieve ubiquitous availability in all scenarios. The precise point positioning (PPP) technique provides a centimeter-level solution without a reference station and is often integrated with an inertial navigation system (INS) for outdoor navigation of unmanned ground vehicles (UGVs). However, in challenging environments such as indoors, the performance of PPP/INS systems is severely degraded, while ultrawideband (UWB) is widely used due to its high accuracy over short distances. This article proposes a tightly coupled (TC) PPP/INS/UWB integrated system, in which satellite-difference ionosphere-free (SD-IF) pseudorange and carrier-phase measurements from a single receiver, microelectromechanical system (MEMS) inertial measurements, and the UWB rangings are tightly fused to accomplish continuous and precise positioning throughout indoor and outdoor coverage. To mitigate the effects of nonline-of-sight (NLOS), multipath, and faulty signals, a two-step weighting approach is proposed to improve UWB positioning performance, including segmentation weighting based on the signal strength, and weight adjustment based on area identification. Besides, motion constraints are imposed on velocity, yaw, and height to suppress drifts during signal-harsh periods. Real-world experiment results show that the proposed system can achieve continuous positioning in the overall indoor and outdoor environments, with the mean absolute errors (MAEs) of (0.214, 0.186, and 0.243 m) and the root mean square errors (RMSEs) of (0.339, 0.291, and 0.414 m) in the east, north, and up directions. In transitional areas with severe signal interference and interruption, a 0.5 m positioning accuracy and smooth switching are still attainable."
+  "description": "Continuous and reliable estimation of navigation states is of paramount importance in ensuring the safe operation of intelligent vehicles. The conventional global navigation satellite system (GNSS)-Inertial-Visual navigation systems have demonstrated the capability to achieve locally accurate and globally drift-free pose estimation. However, challenges such as frequent satellite signal interference, limited visual features, and sudden sensor failures can severely degrade performance or even lead to complete system collapse when utilizing minimal sensor configurations. For this reason, we propose a novel and globally drift-free tightly coupled (TC) system that can integrate any number of GNSS, inertial measurement units (IMUs), and cameras to enable accurate and robust vehicle navigation. Specifically, a stacked state estimator centered on the IMU is designed to fuse information from all sensors at the raw measurement level. The pseudorange and carrier phase measurements from all GNSS terminals are directly correlated with the core IMU, ensuring accurate and fast positioning of the system in a global frame. The feature measurements from multiple independent cameras are also used to update the states by exploiting inter-epoch geometric constraints. In addition, the multiple homogeneous IMUs can not only further improve the state estimation of the system by imposing rigid constraints on the core IMU, but also switch over in time for smooth state estimation when the core IMU are faulty. We comprehensively evaluate the state estimation accuracy and robustness of the proposed approach through a series of in-vehicle experiments and simulation experiments in real urban scenarios. The results indicate that the proposed system can achieve 93.2% availability with a horizontal position error less than 0.5 m and 97.8% availability with a heading error less than 0.2 deg in typical urban environments, significantly outperforming both conventional and state-of-the-art approaches. Note to Practitioners —This study focuses on the tight integration of multiple homogeneous and heterogeneous sensors with the goal of addressing frequent interference and degradation challenges in wide-area vehicle navigation applications. We propose a general-purpose GNSS-Inertial-Visual tight coupled framework capable of integrating any number of GNSS, IMUs, and cameras at the raw measurement level. It maximizes the use of as much sensor information as possible to achieve accurate and robust state estimation and is resilient to anomalous measurements and sensor unavailability. This solution holds practical and effective for autonomous vehicles that are now commonly equipped with multiple sensors."
 }
 </script>
 
@@ -394,7 +394,7 @@
 
 
   
-  <title>An indoor and outdoor seamless positioning system for low-cost UGV using PPP/INS/UWB tightly coupled integration | Zongzhou Wu</title>
+  <title>Accurate and capable GNSS-inertial-visual vehicle navigation via tightly coupled multiple homogeneous sensors | Zongzhou Wu</title>
 
   
   
@@ -414,7 +414,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="e2440e551f719d64fbb8fa3d1a240bf0" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="5cf33a163e276ef1f8b25b2fce572713" >
 
   
   
@@ -830,7 +830,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>An indoor and outdoor seamless positioning system for low-cost UGV using PPP/INS/UWB tightly coupled integration</h1>
+  <h1>Accurate and capable GNSS-inertial-visual vehicle navigation via tightly coupled multiple homogeneous sensors</h1>
 
   
 
@@ -848,13 +848,12 @@
     
 
   <span >
-      Xingxing Li</span>, <span class="author-highlighted">
-      Zongzhou Wu</span>, <span >
       Zhiheng Shen</span>, <span >
-      Zhili Xu</span>, <span >
-      Xin Li</span>, <span >
-      Shengyu Li</span>, <span >
-      Junjie Han</span>
+      Xingxing Li</span>, <span >
+      Yuxuan Zhou</span>, <span >
+      Shengyu Li</span>, <span class="author-highlighted">
+      Zongzhou Wu</span>, <span >
+      Xuanbin Wang</span>
   </div>
   
   
@@ -865,7 +864,7 @@
     
       
     
-    September, 2023
+    July, 2024
   </span>
   
 
@@ -905,14 +904,14 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="https://ieeexplore.ieee.org/document/10242329" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.1109/TASE.2024.3422081" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/journal-article/jsen-1/cite.bib">
+        data-filename="/publication/journal-article/tase-1/cite.bib">
   Cite
 </a>
 
@@ -928,7 +927,7 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.1109/JSEN.2023.3310480" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.1109/TASE.2024.3422081" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -946,7 +945,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Seamless positioning is critical for mobile robots to achieve ubiquitous availability in all scenarios. The precise point positioning (PPP) technique provides a centimeter-level solution without a reference station and is often integrated with an inertial navigation system (INS) for outdoor navigation of unmanned ground vehicles (UGVs). However, in challenging environments such as indoors, the performance of PPP/INS systems is severely degraded, while ultrawideband (UWB) is widely used due to its high accuracy over short distances. This article proposes a tightly coupled (TC) PPP/INS/UWB integrated system, in which satellite-difference ionosphere-free (SD-IF) pseudorange and carrier-phase measurements from a single receiver, microelectromechanical system (MEMS) inertial measurements, and the UWB rangings are tightly fused to accomplish continuous and precise positioning throughout indoor and outdoor coverage. To mitigate the effects of nonline-of-sight (NLOS), multipath, and faulty signals, a two-step weighting approach is proposed to improve UWB positioning performance, including segmentation weighting based on the signal strength, and weight adjustment based on area identification. Besides, motion constraints are imposed on velocity, yaw, and height to suppress drifts during signal-harsh periods. Real-world experiment results show that the proposed system can achieve continuous positioning in the overall indoor and outdoor environments, with the mean absolute errors (MAEs) of (0.214, 0.186, and 0.243 m) and the root mean square errors (RMSEs) of (0.339, 0.291, and 0.414 m) in the east, north, and up directions. In transitional areas with severe signal interference and interruption, a 0.5 m positioning accuracy and smooth switching are still attainable.</p>
+    <p class="pub-abstract">Continuous and reliable estimation of navigation states is of paramount importance in ensuring the safe operation of intelligent vehicles. The conventional global navigation satellite system (GNSS)-Inertial-Visual navigation systems have demonstrated the capability to achieve locally accurate and globally drift-free pose estimation. However, challenges such as frequent satellite signal interference, limited visual features, and sudden sensor failures can severely degrade performance or even lead to complete system collapse when utilizing minimal sensor configurations. For this reason, we propose a novel and globally drift-free tightly coupled (TC) system that can integrate any number of GNSS, inertial measurement units (IMUs), and cameras to enable accurate and robust vehicle navigation. Specifically, a stacked state estimator centered on the IMU is designed to fuse information from all sensors at the raw measurement level. The pseudorange and carrier phase measurements from all GNSS terminals are directly correlated with the core IMU, ensuring accurate and fast positioning of the system in a global frame. The feature measurements from multiple independent cameras are also used to update the states by exploiting inter-epoch geometric constraints. In addition, the multiple homogeneous IMUs can not only further improve the state estimation of the system by imposing rigid constraints on the core IMU, but also switch over in time for smooth state estimation when the core IMU are faulty. We comprehensively evaluate the state estimation accuracy and robustness of the proposed approach through a series of in-vehicle experiments and simulation experiments in real urban scenarios. The results indicate that the proposed system can achieve 93.2% availability with a horizontal position error less than 0.5 m and 97.8% availability with a heading error less than 0.2 deg in typical urban environments, significantly outperforming both conventional and state-of-the-art approaches. Note to Practitioners —This study focuses on the tight integration of multiple homogeneous and heterogeneous sensors with the goal of addressing frequent interference and degradation challenges in wide-area vehicle navigation applications. We propose a general-purpose GNSS-Inertial-Visual tight coupled framework capable of integrating any number of GNSS, IMUs, and cameras at the raw measurement level. It maximizes the use of as much sensor information as possible to achieve accurate and robust state estimation and is resilient to anomalous measurements and sensor unavailability. This solution holds practical and effective for autonomous vehicles that are now commonly equipped with multiple sensors.</p>
     
 
     
@@ -974,7 +973,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">IEEE Sensors Journal, vol. 23, no. 20, pp. 24895-24906, Oct. 2023</div>
+          <div class="col-12 col-md-9">IEEE Transactions on Automation Science and Engineering, (Early Access)</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -1013,7 +1012,7 @@ Add the publication's **full text** or **supplementary notes** here. You can use
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/seamless-positioning/">seamless positioning</a>
+  <a class="badge badge-light" href="/tag/gnss/">GNSS</a>
   
   <a class="badge badge-light" href="/tag/sensor-fusion/">sensor fusion</a>
   
@@ -1036,7 +1035,7 @@ Add the publication's **full text** or **supplementary notes** here. You can use
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Fjsen-1%2F&amp;text=An&#43;indoor&#43;and&#43;outdoor&#43;seamless&#43;positioning&#43;system&#43;for&#43;low-cost&#43;UGV&#43;using&#43;PPP%2FINS%2FUWB&#43;tightly&#43;coupled&#43;integration" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Ftase-1%2F&amp;text=Accurate&#43;and&#43;capable&#43;GNSS-inertial-visual&#43;vehicle&#43;navigation&#43;via&#43;tightly&#43;coupled&#43;multiple&#43;homogeneous&#43;sensors" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1053,7 +1052,7 @@ Add the publication's **full text** or **supplementary notes** here. You can use
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Fjsen-1%2F&amp;t=An&#43;indoor&#43;and&#43;outdoor&#43;seamless&#43;positioning&#43;system&#43;for&#43;low-cost&#43;UGV&#43;using&#43;PPP%2FINS%2FUWB&#43;tightly&#43;coupled&#43;integration" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Ftase-1%2F&amp;t=Accurate&#43;and&#43;capable&#43;GNSS-inertial-visual&#43;vehicle&#43;navigation&#43;via&#43;tightly&#43;coupled&#43;multiple&#43;homogeneous&#43;sensors" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1072,7 +1071,7 @@ Add the publication's **full text** or **supplementary notes** here. You can use
         
       
       <li>
-        <a href="mailto:?subject=An%20indoor%20and%20outdoor%20seamless%20positioning%20system%20for%20low-cost%20UGV%20using%20PPP%2FINS%2FUWB%20tightly%20coupled%20integration&amp;body=https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Fjsen-1%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Accurate%20and%20capable%20GNSS-inertial-visual%20vehicle%20navigation%20via%20tightly%20coupled%20multiple%20homogeneous%20sensors&amp;body=https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Ftase-1%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1089,7 +1088,7 @@ Add the publication's **full text** or **supplementary notes** here. You can use
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Fjsen-1%2F&amp;title=An&#43;indoor&#43;and&#43;outdoor&#43;seamless&#43;positioning&#43;system&#43;for&#43;low-cost&#43;UGV&#43;using&#43;PPP%2FINS%2FUWB&#43;tightly&#43;coupled&#43;integration" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Ftase-1%2F&amp;title=Accurate&#43;and&#43;capable&#43;GNSS-inertial-visual&#43;vehicle&#43;navigation&#43;via&#43;tightly&#43;coupled&#43;multiple&#43;homogeneous&#43;sensors" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1106,7 +1105,7 @@ Add the publication's **full text** or **supplementary notes** here. You can use
       
       
       <li>
-        <a href="whatsapp://send?text=An&#43;indoor&#43;and&#43;outdoor&#43;seamless&#43;positioning&#43;system&#43;for&#43;low-cost&#43;UGV&#43;using&#43;PPP%2FINS%2FUWB&#43;tightly&#43;coupled&#43;integration%20https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Fjsen-1%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Accurate&#43;and&#43;capable&#43;GNSS-inertial-visual&#43;vehicle&#43;navigation&#43;via&#43;tightly&#43;coupled&#43;multiple&#43;homogeneous&#43;sensors%20https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Ftase-1%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1123,7 +1122,7 @@ Add the publication's **full text** or **supplementary notes** here. You can use
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Fjsen-1%2F&amp;title=An&#43;indoor&#43;and&#43;outdoor&#43;seamless&#43;positioning&#43;system&#43;for&#43;low-cost&#43;UGV&#43;using&#43;PPP%2FINS%2FUWB&#43;tightly&#43;coupled&#43;integration" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fzzwu29.github.io%2Fpublication%2Fjournal-article%2Ftase-1%2F&amp;title=Accurate&#43;and&#43;capable&#43;GNSS-inertial-visual&#43;vehicle&#43;navigation&#43;via&#43;tightly&#43;coupled&#43;multiple&#43;homogeneous&#43;sensors" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1142,6 +1141,24 @@ Add the publication's **full text** or **supplementary notes** here. You can use
 
 
   
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
   
     
 
@@ -1274,30 +1291,6 @@ Add the publication's **full text** or **supplementary notes** here. You can use
 
     </div>
   </div>
-
-
-  
-    
-
-
-
-
-  
-    
-
-
-
-
-  
-    
-
-
-
-
-  
-    
-
-
 
 
   

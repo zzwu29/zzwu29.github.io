@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zzwu29.github.io/talk/example-talk/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/event/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/publication/journal-article/tits-1/</loc>
-    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
+    <loc>https://zzwu29.github.io/publication/journal-article/tase-1/</loc>
+    <lastmod>2024-07-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zzwu29.github.io/publication-type/article-journal/</loc>
-    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zzwu29.github.io/tag/gnss/</loc>
-    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zzwu29.github.io/publication_types/</loc>
-    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zzwu29.github.io/publication/</loc>
-    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zzwu29.github.io/tag/sensor-fusion/</loc>
-    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zzwu29.github.io/tags/</loc>
+    <lastmod>2024-07-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zzwu29.github.io/publication/journal-article/tim-2/</loc>
+    <lastmod>2024-05-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://zzwu29.github.io/publication/journal-article/tits-1/</loc>
     <lastmod>2024-04-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -58,20 +58,8 @@
     <lastmod>2023-12-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://zzwu29.github.io/post/chungking-express/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://zzwu29.github.io/post/integrate-cpp-python/</loc>
     <lastmod>2023-12-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/category/journey/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/tag/movie/</loc>
-    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zzwu29.github.io/post/</loc>
@@ -84,18 +72,6 @@
   </url><url>
     <loc>https://zzwu29.github.io/category/research/</loc>
     <lastmod>2023-12-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/tag/exhibition/</loc>
-    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/post/louis-cha-exhibit/</loc>
-    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/tag/kung-fu-novel/</loc>
-    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zzwu29.github.io/tag/computer-vision/</loc>
@@ -112,14 +88,6 @@
   </url><url>
     <loc>https://zzwu29.github.io/post/frame-interpolation/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/tag/drone-shot/</loc>
-    <lastmod>2023-09-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/post/drone-shot-wuhan/</loc>
-    <lastmod>2023-09-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zzwu29.github.io/project/superpointcpp/</loc>
@@ -144,14 +112,6 @@
   </url><url>
     <loc>https://zzwu29.github.io/tag/ppp-rtk/</loc>
     <lastmod>2023-08-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/post/drone-shot-shenzhen/</loc>
-    <lastmod>2023-08-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/post/drone-shot-zhuhai/</loc>
-    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://zzwu29.github.io/publication/journal-article/pnt-2/</loc>
@@ -212,14 +172,6 @@
   </url><url>
     <loc>https://zzwu29.github.io/post/nvidia-driver/</loc>
     <lastmod>2021-05-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://zzwu29.github.io/slides/example/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

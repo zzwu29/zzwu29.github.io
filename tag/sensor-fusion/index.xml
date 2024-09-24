@@ -5,12 +5,66 @@
     <link>https://zzwu29.github.io/tag/sensor-fusion/</link>
       <atom:link href="https://zzwu29.github.io/tag/sensor-fusion/index.xml" rel="self" type="application/rss+xml" />
     <description>sensor fusion</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zzwu29.github.io/media/icon_hu2a5c139d10a6f22d93bb117fcb1906b5_18896_512x512_fill_lanczos_center_3.png</url>
       <title>sensor fusion</title>
       <link>https://zzwu29.github.io/tag/sensor-fusion/</link>
     </image>
+    
+    <item>
+      <title>Accurate and capable GNSS-inertial-visual vehicle navigation via tightly coupled multiple homogeneous sensors</title>
+      <link>https://zzwu29.github.io/publication/journal-article/tase-1/</link>
+      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://zzwu29.github.io/publication/journal-article/tase-1/</guid>
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A failure-resistant, lightweight, and tightly coupled GNSS/INS/vision vehicle integration for complex urban environments</title>
+      <link>https://zzwu29.github.io/publication/journal-article/tim-2/</link>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://zzwu29.github.io/publication/journal-article/tim-2/</guid>
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
     
     <item>
       <title>A novel factor graph framework for tightly coupled GNSS/INS integration with carrier-phase ambiguity resolution</title>
